@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% for item in voitures %}
+<table class="col-md-4 mx-auto text-center border border-dark mb-3 p-3 mt-3 mr-1">
+	<thead>
+		<tr>
+            <th scope="col">{{ item.marque }}</th>
+        </tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td scope="row">{{ item.modele }}</td>
+            <td scope="row">{{ item.prix }}</td>
+            <td scope="row">{{ item.description }}</td>
+        </tr>
+        <tr></tr>
+    </tbody>
+
+</table>
+
+
+{% endfor %} 
+{% endblock %}
+
+

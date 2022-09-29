@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Accueil
+{% endblock %}
+{% block body %}
+<h1>Bienvenue sur le demoblog</h1>
+<p> coucou les gens</p>
+
+<h3>{{slogan}}</h3> {# premier argument qui s'affiche affichage de la variable slogan déclarée dans la méthode home()#}
+
+{% if age >=18 %}
+<p>Tu es majeur</p>
+{% else %}
+<p> Tu es mineur</p>
+{% endif %} 
+{% set str = "J'ai un ordinateur" %}
+{% if str starts with "J'ai" %}
+    <p>C'est vrai</p>
+{% endif %}
+
+
+
+{% endblock %}
