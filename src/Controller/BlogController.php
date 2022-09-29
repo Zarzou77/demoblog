@@ -54,7 +54,7 @@ class BlogController extends AbstractController
 
         $form->handleRequest($globals);
 
-        dump($article);
+        //dump($article);
             if ($form->isSubmitted() && $form->isValid())
             {
 
